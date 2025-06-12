@@ -1,0 +1,12 @@
+version: '3'
+
+
+services:
+  bot:
+    container_name: bot
+    build:
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env
+    entrypoint: "python -m src.main"
