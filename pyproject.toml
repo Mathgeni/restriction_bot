@@ -3,7 +3,6 @@ name = "bot-template"
 version = "0.1.0"
 description = ""
 authors = ["n.kanunnikov"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"

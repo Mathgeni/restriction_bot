@@ -2,9 +2,11 @@ import asyncio
 import logging
 
 import aiogram
+
 from src.config import config
 from src.handlers import router
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
