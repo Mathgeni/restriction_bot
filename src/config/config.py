@@ -8,6 +8,7 @@ class Config(BaseSettings):
     )
 
     BOT_TOKEN: str
+    CHANNEL_TAG: str
 
 
 config = Config()
