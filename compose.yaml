@@ -3,7 +3,7 @@ version: '3'
 
 services:
   bot:
-    container_name: bot
+    container_name: restriction-bot
     build:
       dockerfile: ./Dockerfile
     restart: unless-stopped
