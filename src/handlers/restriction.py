@@ -13,6 +13,7 @@ NOT_SUBSCRIBED_TEXT = """
 
 @router.message(F.content_type == "text")
 async def can_send_messaged(message: Message):
+    print(message.from_user.username)
     if message.from_user.username in (
         "GroupAnonymousBot",
         "trubitsinamarina",
