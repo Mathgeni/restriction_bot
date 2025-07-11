@@ -18,6 +18,8 @@ async def can_send_messaged(message: Message):
         "trubitsinamarina",
     ):
         return
+    if message.chat.id != "chat_trubitsina":
+        return
     chat_member = await message.bot.get_chat_member(
         chat_id=f"@{config.CHANNEL_TAG}",
         user_id=message.from_user.id
