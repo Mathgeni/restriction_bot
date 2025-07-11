@@ -13,7 +13,10 @@ NOT_SUBSCRIBED_TEXT = """
 
 @router.message(F.content_type == "text")
 async def can_send_messaged(message: Message):
-    if message.from_user.username == "GroupAnonymousBot":
+    if message.from_user.username in (
+        "GroupAnonymousBot",
+        "trubitsinamarina",
+    ):
         return
     chat_member = await message.bot.get_chat_member(
         chat_id=f"@{config.CHANNEL_TAG}",
